@@ -95,11 +95,46 @@
     border:1px solid var(--acc); border-radius:8px; padding:10px; text-decoration:none; color:var(--acc); font-weight:600; }
   .demo-btn:hover { background:#22325c; }
 
+  /* GENOME block (ANATOMY UNIFICATION) */
+  .genome { margin:14px 0; padding:12px; border-radius:10px; background:rgba(127,227,255,0.06);
+    border:1px solid rgba(127,227,255,0.22); }
+  .genome .grow { display:flex; justify-content:space-between; align-items:center; gap:10px;
+    padding:7px 0; border-bottom:1px solid rgba(127,227,255,0.10); }
+  .genome .grow:last-child { border-bottom:none; }
+  .genome .glabel { font-size:10px; letter-spacing:1px; text-transform:uppercase; opacity:.6; }
+  .genome .gval { font-size:13px; font-weight:700; text-align:right; }
+  .fpill { display:inline-block; font-family:monospace; font-weight:800; font-size:13px;
+    padding:2px 8px; border-radius:6px; background:#16203c; color:var(--acc); }
+  .fstat { display:inline-block; font-size:9px; font-weight:700; padding:2px 7px; border-radius:10px;
+    margin-left:6px; vertical-align:middle; }
+  .fstat.proved { background:#1f7a4d; color:#dfffe9; }
+  .fstat.open { background:#7a5a1f; color:#ffe9c2; }
+  .fstat.conj { background:#7a2f5a; color:#ffd6ec; }
+  .rcount { font-size:20px; font-weight:800; color:#7fe3ff; }
+  .rcount small { font-size:10px; font-weight:500; opacity:.6; display:block; }
+  .fname { font-size:11px; opacity:.7; line-height:1.4; margin-top:4px; }
+  .leanref { font-size:10px; opacity:.6; font-family:monospace; word-break:break-word; line-height:1.5; }
+
   /* data banner */
   #dataBanner { display:none; position:fixed; bottom:14px; left:50%; transform:translateX(-50%);
     z-index:15; background:rgba(255,136,51,0.15); border:1px solid #ff8833; color:#ffcc99;
     border-radius:8px; padding:7px 16px; font-size:11px; }
   .hint { position:fixed; bottom:14px; right:14px; z-index:10; font-size:10px; opacity:.4; }
+
+  /* MOBILE-FIRST: full-width slide-up panel, larger tap targets */
+  @media (max-width: 720px) {
+    #panel { width:100%; right:-100%; left:0; top:auto; bottom:0; height:78vh;
+      border-left:none; border-top:1px solid rgba(127,227,255,0.3);
+      border-radius:16px 16px 0 0; padding:48px 16px calc(20px + env(safe-area-inset-bottom));
+      transition:bottom .3s ease, right 0s; }
+    #panel.open { right:0; bottom:0; }
+    #panelClose { font-size:26px; top:10px; right:14px; padding:6px; }
+    .org-head .qn { font-size:28px; }
+    .demo-btn { padding:14px; font-size:15px; }
+    .genome .grow { padding:10px 0; }
+    .genome .gval, .rcount { font-size:15px; }
+    #hud, #controls, #flagships, #legend { font-size:11px; max-width:46vw; }
+  }
 </style>
   <link rel="stylesheet" href="brand-tokens.css"/>
   <link rel="stylesheet" href="brand-bridge.css"/>
@@ -117,7 +152,7 @@
     <div class="row"><span>Axioms</span><b id="hudAxioms">14</b></div>
     <div class="row"><span>Sorries</span><b id="hudSorries">163</b></div>
     <div class="row"><span>FPS</span><b id="hudFps">—</b></div>
-    <div class="sub">Doctrine v10/v11 · lutar-v18.0.0 · Λ-spine = 13 axes · uniqueness = Conjecture</div>
+    <div class="sub">Doctrine v12 · lutar-v18.0.0 · Λ-spine = 13 axes · uniqueness = <b>Conjecture 1</b> · receipts (live) = 50</div>
   </div>
 
   <div id="controls">

@@ -1,15 +1,24 @@
 {
   "_meta": {
-    "doctrine": "v11",
+    "doctrine": "v12",
     "snapshot_date": "2026-06-01",
     "lean_ref": "lutar-v18.0.0 @ c7c0ba17",
     "declarations": 749,
     "axioms_unique": 14,
     "sorries_total": 163,
     "source": "110_ANATOMY_COMPLETENESS_AUDIT.md + live /api/a11oy/v1/honest + live flagship /healthz polls",
-    "lambda_uniqueness": "Conjecture, not a closed theorem (open CAUCHY_ND sorry Uniqueness.lean:120 + missing symmetry axiom)",
+    "lambda_uniqueness": "F23 / Λ = Conjecture 1 — NOT a theorem. Open CAUCHY_ND sorry (Uniqueness.lean:120) + missing symmetry axiom. Bounty: github.com/szl-holdings/lutar-lean/blob/main/BOUNTY.md",
     "note": "Lambda-spine vertebrae count = 13 (per yuyay_v3 LinkedIn truth). HONESTY: wires not shipped render gray DASHED; flagships not deployed render RED. killinchu + uds-demo are 404 (PENDING). W3C traceparent (Wire D) not distributed across Spaces.",
-    "v13_edge_organs": "ADDITIVE 2026-06-01 (Yachay): chaski(eyes), wallpa(mouth), wasi-rikuq(atop head). v13 factor obligations live OUTSIDE locked 163 (→166 once instilled). LOCKED 749/14/163 unchanged."
+    "v13_edge_organs": "ADDITIVE 2026-06-01 (Yachay): chaski(eyes), wallpa(mouth), wasi-rikuq(atop head). v13 factor obligations live OUTSIDE locked 163 (→166 once instilled). LOCKED 749/14/163 unchanged.",
+    "genome_unified": "2026-06-02 — ANATOMY UNIFICATION: each organ now carries puriq_formulas, puriq_primary, lean_theorem, receipts (real ledger count). Sign Yachay.",
+    "receipts_total_live": 50,
+    "receipts_breakdown": {
+      "a11oy": 13,
+      "amaru": 13,
+      "rosie": 13,
+      "sentra": 11,
+      "slsa_chain": 5
+    }
   },
   "organs": [
     {
@@ -29,7 +38,17 @@
       "zenodo": "10.5281/zenodo.20466440",
       "color": "#ffe14d",
       "emissive": "#aa8800",
-      "glow": true
+      "glow": true,
+      "puriq_formulas": [
+        "F2"
+      ],
+      "puriq_primary": "F2",
+      "puriq_primary_status": "SORRY_PURIQ_OPEN",
+      "puriq_primary_name": "Scheduler liveness / round-robin fairness",
+      "lean_theorem": "PuriqFormulaLean.lean:L132-L139",
+      "receipts": 13,
+      "receipts_component": "amaru",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "yuyay",
@@ -46,7 +65,17 @@
       "zenodo": "10.5281/zenodo.20466440",
       "color": "#ff5577",
       "emissive": "#aa1133",
-      "glow": true
+      "glow": true,
+      "puriq_formulas": [
+        "F11"
+      ],
+      "puriq_primary": "F11",
+      "puriq_primary_status": "PROVED",
+      "puriq_primary_name": "Ayni reciprocity conservation (zero-sum balance)",
+      "lean_theorem": "PuriqFormulaLean.lean:L56-L75 (zero-sum balance over append-only ledger)",
+      "receipts": 13,
+      "receipts_component": "amaru",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "unay",
@@ -63,7 +92,18 @@
       "zenodo": null,
       "color": "#c08cff",
       "emissive": "#5522aa",
-      "glow": false
+      "glow": false,
+      "puriq_formulas": [
+        "F5",
+        "F6"
+      ],
+      "puriq_primary": "F5",
+      "puriq_primary_status": "SORRY_PURIQ_OPEN",
+      "puriq_primary_name": "Unay receipt-keyed recall correctness",
+      "lean_theorem": "PuriqFormulaLean.lean:L150-L154",
+      "receipts": 13,
+      "receipts_component": "rosie",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "yawar",
@@ -82,7 +122,18 @@
       "zenodo": "10.5281/zenodo.20451991",
       "color": "#ff2233",
       "emissive": "#cc0000",
-      "glow": true
+      "glow": true,
+      "puriq_formulas": [
+        "F1",
+        "F14"
+      ],
+      "puriq_primary": "F1",
+      "puriq_primary_status": "PROVED",
+      "puriq_primary_name": "Replay-hash determinism / idempotent replay",
+      "lean_theorem": "PuriqFormulaLean.lean:L35-L53 (idempotent fold over Nat/List)",
+      "receipts": 13,
+      "receipts_component": "a11oy",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "huklla",
@@ -102,7 +153,18 @@
       "zenodo": "10.5281/zenodo.20466440",
       "color": "#33ddaa",
       "emissive": "#11885f",
-      "glow": false
+      "glow": false,
+      "puriq_formulas": [
+        "F12",
+        "F16"
+      ],
+      "puriq_primary": "F12",
+      "puriq_primary_status": "PROVED",
+      "puriq_primary_name": "Additive coupling / CRT-style scheduling (Kuramoto-inspired)",
+      "lean_theorem": "PuriqFormulaLean.lean:L77-L87 (distributive/CRT scaffold)",
+      "receipts": 13,
+      "receipts_component": "amaru",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "kallpa",
@@ -121,7 +183,17 @@
       "zenodo": "10.5281/zenodo.20466435",
       "color": "#ffd23f",
       "emissive": "#aa8800",
-      "glow": true
+      "glow": true,
+      "puriq_formulas": [
+        "F17"
+      ],
+      "puriq_primary": "F17",
+      "puriq_primary_status": "SORRY_PURIQ_OPEN",
+      "puriq_primary_name": "Three-vertical isolation (a11oy / killinchu / rosie)",
+      "lean_theorem": "PuriqFormulaLean.lean:L180-L181",
+      "receipts": 13,
+      "receipts_component": "a11oy",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "khipu",
@@ -140,7 +212,20 @@
       "zenodo": "10.5281/zenodo.20451997",
       "color": "#ffaa44",
       "emissive": "#cc7711",
-      "glow": true
+      "glow": true,
+      "puriq_formulas": [
+        "F4",
+        "F15",
+        "F18",
+        "F22"
+      ],
+      "puriq_primary": "F18",
+      "puriq_primary_status": "PROVED",
+      "puriq_primary_name": "Reed-Solomon RS(10,6) parity / erasure tolerance",
+      "lean_theorem": "PuriqFormulaLean.lean:L89-L107 (RS erasure recovery)",
+      "receipts": 13,
+      "receipts_component": "rosie",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "lambda",
@@ -161,7 +246,18 @@
       "color": "#ffffff",
       "emissive": "#88aaff",
       "glow": true,
-      "axes": 13
+      "axes": 13,
+      "puriq_formulas": [
+        "F19",
+        "F23"
+      ],
+      "puriq_primary": "F19",
+      "puriq_primary_status": "PROVED",
+      "puriq_primary_name": "Bekenstein additive scaffolding / budget monotonicity",
+      "lean_theorem": "PuriqFormulaLean.lean:L109-L124 (monotone budget scaffold; full inequality NOT proved)",
+      "receipts": 13,
+      "receipts_component": "a11oy",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "otel",
@@ -181,7 +277,15 @@
       "zenodo": null,
       "color": "#66ffcc",
       "emissive": "#229977",
-      "glow": false
+      "glow": false,
+      "puriq_formulas": [],
+      "puriq_primary": null,
+      "puriq_primary_status": "—",
+      "puriq_primary_name": "",
+      "lean_theorem": "Code-complete + tested; NO Zenodo SW deposit (provenance gap)",
+      "receipts": 13,
+      "receipts_component": "a11oy",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "kanchay",
@@ -198,7 +302,17 @@
       "zenodo": null,
       "color": "#ffe9a8",
       "emissive": "#caa84a",
-      "glow": false
+      "glow": false,
+      "puriq_formulas": [
+        "F20"
+      ],
+      "puriq_primary": "F20",
+      "puriq_primary_status": "SORRY_PURIQ_OPEN",
+      "puriq_primary_name": "Mobile input-event equivalence (touch/pointer parity)",
+      "lean_theorem": "PuriqFormulaLean.lean:L183-L184",
+      "receipts": 13,
+      "receipts_component": "a11oy",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "hatun",
@@ -217,7 +331,19 @@
       "zenodo": "10.5281/zenodo.20174600",
       "color": "#a8c8ff",
       "emissive": "#3355aa",
-      "glow": false
+      "glow": false,
+      "puriq_formulas": [
+        "F3",
+        "F10",
+        "F21"
+      ],
+      "puriq_primary": "F3",
+      "puriq_primary_status": "SORRY_PURIQ_OPEN",
+      "puriq_primary_name": "Organ boot gating soundness",
+      "lean_theorem": "PuriqFormulaLean.lean:L137-L140",
+      "receipts": 13,
+      "receipts_component": "a11oy",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "sumaq",
@@ -235,7 +361,15 @@
       "zenodo": "10.5281/zenodo.20436556",
       "color": "#ff9ed8",
       "emissive": "#bb5599",
-      "glow": false
+      "glow": false,
+      "puriq_formulas": [],
+      "puriq_primary": null,
+      "puriq_primary_status": "—",
+      "puriq_primary_name": "",
+      "lean_theorem": "Design subsystem (build-reproducible); not a runtime organ",
+      "receipts": 13,
+      "receipts_component": "a11oy",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "chaski",
@@ -253,7 +387,17 @@
       "color": "#33e1ff",
       "emissive": "#0a8fb0",
       "glow": true,
-      "doctrine": "v13 ADDITIVE"
+      "doctrine": "v13 ADDITIVE",
+      "puriq_formulas": [
+        "F7"
+      ],
+      "puriq_primary": "F7",
+      "puriq_primary_status": "SORRY_PURIQ_OPEN",
+      "puriq_primary_name": "Chaski FIFO reception ordering",
+      "lean_theorem": "PuriqFormulaLean.lean:L156-L157",
+      "receipts": 13,
+      "receipts_component": "a11oy",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "wallpa",
@@ -271,7 +415,17 @@
       "color": "#b07cff",
       "emissive": "#5a2aa0",
       "glow": true,
-      "doctrine": "v13 ADDITIVE"
+      "doctrine": "v13 ADDITIVE",
+      "puriq_formulas": [
+        "F8"
+      ],
+      "puriq_primary": "F8",
+      "puriq_primary_status": "SORRY_PURIQ_OPEN",
+      "puriq_primary_name": "Wallpa governed-voice OSS-only safety",
+      "lean_theorem": "PuriqFormulaLean.lean:L159-L160",
+      "receipts": 13,
+      "receipts_component": "a11oy",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     },
     {
       "id": "wasi-rikuq",
@@ -289,7 +443,17 @@
       "color": "#ffcb3d",
       "emissive": "#aa7a00",
       "glow": true,
-      "doctrine": "v13 ADDITIVE"
+      "doctrine": "v13 ADDITIVE",
+      "puriq_formulas": [
+        "F9"
+      ],
+      "puriq_primary": "F9",
+      "puriq_primary_status": "SORRY_PURIQ_OPEN",
+      "puriq_primary_name": "Wasi-Rikuq advisory non-interference",
+      "lean_theorem": "PuriqFormulaLean.lean:L162-L163",
+      "receipts": 13,
+      "receipts_component": "a11oy",
+      "receipts_source": "SZLHOLDINGS/uds-spans-receipts · receipts_sample.jsonl (live ledger snapshot 2026-06-02)"
     }
   ],
   "wires": [

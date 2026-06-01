@@ -682,6 +682,29 @@ function selectOrgan(id) {
   document.querySelectorAll('.organ-li').forEach(el => el.classList.toggle('active', el.dataset.id === id));
   const sc = STATUS_COLORS[d.lean] || '#888';
   const formulas = d.formulas.map(f => `<li><code>${f}</code></li>`).join('');
+  // ANATOMY UNIFICATION genome block: Quechua name + PURIQ formula + Lean theorem + receipt count
+  const fStat = (d.puriq_primary_status || '').toUpperCase();
+  const statCls = fStat.includes('PROVED') ? 'proved' : (fStat.includes('CONJECTURE') ? 'conj' : 'open');
+  const statLabel = fStat.includes('PROVED') ? 'PROVED' : (fStat.includes('CONJECTURE') ? 'CONJECTURE 1' : 'OPEN (sorry)');
+  const allF = (d.puriq_formulas || []).map(f => `<span class="fpill" style="margin:2px 4px 2px 0">${f}</span>`).join('');
+  const genome = `
+    <div class="genome">
+      <div class="grow">
+        <span class="glabel">Quechua organ</span>
+        <span class="gval" style="color:${d.color}">${d.quechua}</span>
+      </div>
+      <div class="grow">
+        <span class="glabel">PURIQ formula</span>
+        <span class="gval">${d.puriq_primary ? `<span class="fpill">${d.puriq_primary}</span><span class="fstat ${statCls}">${statLabel}</span>` : '<span style="opacity:.55;font-weight:500">no numbered formula</span>'}</span>
+      </div>
+      ${d.puriq_primary_name ? `<div class="fname">${d.puriq_primary_name}</div>` : ''}
+      <div class="grow">
+        <span class="glabel">Receipts (live ledger)</span>
+        <span class="rcount">${d.receipts ?? 0}<small>${d.receipts_component || ''}</small></span>
+      </div>
+      ${(d.puriq_formulas && d.puriq_formulas.length > 1) ? `<div class="grow"><span class="glabel">All formulas</span><span class="gval">${allF}</span></div>` : ''}
+      ${d.lean_theorem ? `<div class="grow" style="display:block"><span class="glabel">Lean theorem</span><div class="leanref">${d.lean_theorem}</div></div>` : ''}
+    </div>`;
   document.getElementById('panel').classList.add('open');
   document.getElementById('panelBody').innerHTML = `
     <div class="org-head" style="border-color:${d.color}">
@@ -690,8 +713,9 @@ function selectOrgan(id) {
     </div>
     <div class="rolepos">${d.role||''}</div>
     <div class="badge" style="background:${sc}">Lean: ${d.lean}</div>
+    ${genome}
     <p class="note">${d.leanNote}</p>
-    <h4>Formula registry</h4>
+    <h4>Formula registry (implementation files)</h4>
     <ul class="formulas">${formulas}</ul>
     <h4>Tests</h4>
     <p class="tests">${d.tests}</p>
